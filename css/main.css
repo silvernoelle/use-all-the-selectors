@@ -1,5 +1,6 @@
-body {
+html {
   background-color: #fdf6e3;
+  box-sizing: border-box;
 }
 
 header, footer {
@@ -26,8 +27,20 @@ h2 {
   background-color: #b58900;
 }
 
-.wrapper > .dfn + strong {
+.facts > .dfn + strong {
   color: #fff;
+}
+
+a {
+  background-color: #719e07;
+}
+
+a + .nohighlight {
+  background-color: transparent;
+}
+
+.contents > ul li:last-child {
+  background-color: #2694d8;
 }
 
 ol li:first-child {
@@ -39,7 +52,7 @@ ol li:last-child {
 }
 
 .types > ul li:nth-child(odd) {
-  background-color:#657ba3;
+  background-color: #657ba3;
 }
 
 .types > ul li:nth-child(even) {
