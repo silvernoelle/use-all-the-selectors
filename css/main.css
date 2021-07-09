@@ -3,6 +3,10 @@ html {
   box-sizing: border-box;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 header, footer {
   font-size: 1.5rem;
 }
@@ -27,7 +31,7 @@ h2 {
   background-color: #b58900;
 }
 
-.facts > .dfn + strong {
+p + strong {
   color: #fff;
 }
 
@@ -35,11 +39,11 @@ a {
   background-color: #719e07;
 }
 
-a + .nohighlight {
-  background-color: transparent;
+.nohighlight {
+  background-color: #000;
 }
 
-.contents > ul li:last-child {
+.contents li:nth-child(3) {
   background-color: #2694d8;
 }
 
@@ -51,14 +55,14 @@ ol li:last-child {
   color: #2aa198;
 }
 
-.types > ul li:nth-child(odd) {
+.types li:nth-child(odd) {
   background-color: #657ba3;
 }
 
-.types > ul li:nth-child(even) {
+.types li:nth-child(even) {
   background-color: #586e75;
 }
 
-.types > ul li:nth-child(3) {
+.types li:nth-child(3n) {
   background-color: #d04b16;
 }
